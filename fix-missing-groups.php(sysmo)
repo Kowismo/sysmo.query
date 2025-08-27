@@ -1,0 +1,161 @@
+<?php
+// fix-missing-groups.php
+require_once('vendor/autoload.php');
+require_once('libs/ezApp.class.php'); // We still load the class to avoid errors
+
+$config = require_once 'configs/config.php';
+$instanceId = 2; // The bot responsible for groups
+
+// Custom function to check if client is in ignored groups
+function isInIgnoredGroups($client_groups, $ignoredGroups) {
+  foreach($ignoredGroups as $ig) {
+    if(in_array((string)$ig, $client_groups)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Logging function
+function logMessage($message, $logDir = '/home/query/logs/fix-missing-groups') {
+    // Sicherstellen, dass das Log-Verzeichnis existiert
+    if (!is_dir($logDir)) {
+        mkdir($logDir, 0755, true);
+    }
+    
+    $logFile = $logDir . '/' . date('Y-m-d') . '.log';
+    $timestamp = date('Y-m-d H:i:s');
+    $logEntry = "[$timestamp] $message\n";
+    file_put_contents($logFile, $logEntry, FILE_APPEND);
+    echo $logEntry; // Auch auf Konsole ausgeben
+}
+
+// Establish connection
+$ts = new ts3admin($config[$instanceId]['connection']['teamspeakHost'], $config[$instanceId]['connection']['teamspeakPorts']['queryPort']);
+
+if($ts->connect()['success']) {
+  if($ts->login($config[$instanceId]['connection']['teamspeakLogin'], $config[$instanceId]['connection']['teamspeakPass'])['success']) {
+    if($ts->selectServer($config[$instanceId]['connection']['teamspeakPorts']['voicePort'])['success']) {
+      
+      logMessage("Fix missing groups process started (Logo + Platform groups only)");
+      
+      // Load configurations
+      $countryConfig = $config[$instanceId]['functions']['notifycliententerview']['countryGroup'];
+      $platformConfig = $config[$instanceId]['functions']['notifycliententerview']['clientPlatform'];
+      
+      // Array of ignored groups
+      $countryIgnoredGroups = $countryConfig['ignoredGroups'];
+      $platformIgnoredGroups = $platformConfig['ignoredGroups'];
+      
+      // Temporäre Logo-Gruppe (wie in countryGroup.php)
+      $logoGroup = 435; // ID der temporären Gruppe mit Logo
+      
+      // Load all clients
+      $clients = $ts->clientList('-uid -country -info')['data'];
+      
+      $added = 0;
+      $skipped = 0;
+      $logoGroupAdded = 0;
+      $platformGroupAdded = 0;
+      
+      logMessage("Processing " . count($clients) . " clients");
+      
+      foreach($clients as $client) {
+        if($client['client_type'] != 0) {
+          $skipped++;
+          continue; // Skip Query clients
+        }
+        
+        $clientInfo = $ts->clientInfo($client['clid'])['data'];
+        
+        // Make sure client_servergroups is a string
+        if (!isset($clientInfo['client_servergroups']) || !is_string($clientInfo['client_servergroups'])) {
+          $clientInfo['client_servergroups'] = '';
+        }
+        
+        $client_groups = explode(',', $clientInfo['client_servergroups']);
+        $clientName = $clientInfo['client_nickname'] ?? 'unknown';
+        $clientCountry = $clientInfo['client_country'] ?? 'unknown';
+        
+        // Skip clients with group ID 283 (Music bots)
+        if(in_array('283', $client_groups)) {
+          logMessage("Skipping music bot {$clientName} (Group 283)");
+          $skipped++;
+          continue;
+        }
+        
+        // 1. Check and add logo group (435) - wie in countryGroup.php
+        if(!isInIgnoredGroups($client_groups, $countryIgnoredGroups)) {
+          logMessage("Processing client {$clientName} [{$clientCountry}] - checking logo group");
+          
+          // Verbesserte Prüfung der Gruppenmitgliedschaft für Logo-Gruppe
+          $hasLogoGroup = false;
+          foreach($client_groups as $group) {
+            if((int)$group === $logoGroup) {
+              $hasLogoGroup = true;
+              break;
+            }
+          }
+          
+          if($hasLogoGroup) {
+            logMessage("Client {$clientName} already has logo group {$logoGroup}, skipping assignment");
+          } else {
+            logMessage("Attempting to add client {$clientName} to logo group {$logoGroup}");
+            $addResult = $ts->serverGroupAddClient($logoGroup, $clientInfo['client_database_id']);
+            
+            // Zusätzliche Fehlerbehandlung für "duplicate entry"
+            if(!$ts->succeeded($addResult) && isset($addResult['errors']) && is_array($addResult['errors'])) {
+              $isDuplicate = false;
+              foreach($addResult['errors'] as $error) {
+                if(strpos($error, 'duplicate entry') !== false) {
+                  $isDuplicate = true;
+                  logMessage("Logo group already assigned to {$clientName} (detected from error), skipping");
+                  break;
+                }
+              }
+              if(!$isDuplicate) {
+                logMessage("Failed to add {$clientName} to logo group. Error: " . json_encode($addResult));
+              }
+            } else if($ts->succeeded($addResult)) {
+              logMessage("Successfully added {$clientName} to logo group {$logoGroup}");
+              $logoGroupAdded++;
+              $added++;
+            }
+          }
+        } else {
+          logMessage("Client {$clientName} is in ignored groups. Groups: " . $clientInfo['client_servergroups']);
+        }
+        
+        // 2. Check and add platform group (original logic)
+        if(!isInIgnoredGroups($client_groups, $platformIgnoredGroups)) {
+          if(isset($clientInfo['client_platform']) && isset($platformConfig['options'][$clientInfo['client_platform']])) {
+            $platformGroup = $platformConfig['options'][$clientInfo['client_platform']];
+            
+            // Check if the group is already assigned
+            if(!in_array((string)$platformGroup, $client_groups)) {
+              $result = $ts->serverGroupAddClient($platformGroup, $clientInfo['client_database_id']);
+              if($ts->succeeded($result)) {
+                logMessage("Added platform group {$platformGroup} for client {$clientName}");
+                $platformGroupAdded++;
+                $added++;
+              } else {
+                logMessage("Failed to add platform group {$platformGroup} for client {$clientName}");
+              }
+            }
+          }
+        }
+      }
+      
+      $finalMessage = "Fix process completed! Total groups added: {$added} (Logo groups: {$logoGroupAdded}, Platform groups: {$platformGroupAdded}). Skipped clients: {$skipped}.";
+      logMessage($finalMessage);
+      
+    } else {
+      logMessage("ERROR: Could not select server");
+    }
+  } else {
+    logMessage("ERROR: Could not login to TeamSpeak");
+  }
+} else {
+  logMessage("ERROR: Could not connect to TeamSpeak");
+}
+?>

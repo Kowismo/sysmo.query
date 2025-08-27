@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spatie/async": "^1.5",
+        "mongodb/mongodb": "^1.12",
+        "par0noid/ts3admin": "1.0.2.5"
+    }
+}

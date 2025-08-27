@@ -1,0 +1,560 @@
+[2025-06-03 21:05:53] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-03 21:05:53] TopG IP resolved to: 54.36.225.177
+[2025-06-03 21:05:53] GET parameters: {"p_resp":"AlvaRoniXs","ip":"2003:c5:df3e:52a1:fd5e:2c6a:1de6:8305"}
+[2025-06-03 21:05:53] [GET] Parameters: username(p_resp)=AlvaRoniXs voter_ip=2003:c5:df3e:52a1:fd5e:2c6a:1de6:8305
+[2025-06-03 21:05:53] MongoDB connection established
+[2025-06-03 21:05:53] SUCCESS: Vote saved for 'AlvaRoniXs' with ID: 683f4791b5d0d389c0050b57
+[2025-06-03 21:05:53] === CALLBACK END ===
+
+[2025-06-03 21:31:01] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-03 21:31:01] TopG IP resolved to: 54.36.225.177
+[2025-06-03 21:31:01] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a718:cb00:b135:7e85:aa44:79e0"}
+[2025-06-03 21:31:01] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a718:cb00:b135:7e85:aa44:79e0
+[2025-06-03 21:31:01] MongoDB connection established
+[2025-06-03 21:31:01] SUCCESS: Vote saved for 'Kowismo' with ID: 683f4d75151b700d87000ce9
+[2025-06-03 21:31:01] === CALLBACK END ===
+
+[2025-06-04 09:58:49] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-04 09:58:49] TopG IP resolved to: 54.36.225.177
+[2025-06-04 09:58:49] GET parameters: {"p_resp":"Columb","ip":"91.90.11.212"}
+[2025-06-04 09:58:49] [GET] Parameters: username(p_resp)=Columb voter_ip=91.90.11.212
+[2025-06-04 09:58:49] MongoDB connection established
+[2025-06-04 09:58:49] SUCCESS: Vote saved for 'Columb' with ID: 683ffcb928649a90b9081ac5
+[2025-06-04 09:58:49] === CALLBACK END ===
+
+[2025-06-06 17:49:11] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-06 17:49:11] TopG IP resolved to: 54.36.225.177
+[2025-06-06 17:49:11] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a714:b900:e5df:13f2:adcb:b6ea"}
+[2025-06-06 17:49:11] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a714:b900:e5df:13f2:adcb:b6ea
+[2025-06-06 17:49:11] MongoDB connection established
+[2025-06-06 17:49:11] SUCCESS: Vote saved for 'Kowismo' with ID: 68430df7151b700d87000cea
+[2025-06-06 17:49:11] === CALLBACK END ===
+
+[2025-06-08 11:47:20] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-08 11:47:20] TopG IP resolved to: 54.36.225.177
+[2025-06-08 11:47:20] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a740:8600:b56d:9016:f3b1:da7"}
+[2025-06-08 11:47:20] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a740:8600:b56d:9016:f3b1:da7
+[2025-06-08 11:47:20] MongoDB connection established
+[2025-06-08 11:47:20] SUCCESS: Vote saved for 'Kowismo' with ID: 68455c2828649a90b9081ac7
+[2025-06-08 11:47:20] === CALLBACK END ===
+
+[2025-06-09 09:12:45] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-09 09:12:45] TopG IP resolved to: 54.36.225.177
+[2025-06-09 09:12:45] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a739:a000:8d75:c16c:687e:f0b4"}
+[2025-06-09 09:12:45] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a739:a000:8d75:c16c:687e:f0b4
+[2025-06-09 09:12:45] MongoDB connection established
+[2025-06-09 09:12:45] SUCCESS: Vote saved for 'Kowismo' with ID: 6846896d151b700d87000cf1
+[2025-06-09 09:12:45] === CALLBACK END ===
+
+[2025-06-10 18:13:50] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-10 18:13:50] TopG IP resolved to: 54.36.225.177
+[2025-06-10 18:13:50] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df3e:5253:7c5e:c9f1:2bcf:a1c1"}
+[2025-06-10 18:13:50] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df3e:5253:7c5e:c9f1:2bcf:a1c1
+[2025-06-10 18:13:50] MongoDB connection established
+[2025-06-10 18:13:50] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 684859be28649a90b9081ac8
+[2025-06-10 18:13:50] === CALLBACK END ===
+
+[2025-06-11 22:25:22] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-11 22:25:22] TopG IP resolved to: 54.36.225.177
+[2025-06-11 22:25:22] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a746:4f00:f9d3:724:84e0:7f3d"}
+[2025-06-11 22:25:22] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a746:4f00:f9d3:724:84e0:7f3d
+[2025-06-11 22:25:22] MongoDB connection established
+[2025-06-11 22:25:22] SUCCESS: Vote saved for 'Kowismo' with ID: 6849e632151b700d87000cf2
+[2025-06-11 22:25:22] === CALLBACK END ===
+
+[2025-06-12 16:27:33] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-12 16:27:33] TopG IP resolved to: 54.36.225.177
+[2025-06-12 16:27:33] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a734:a800:60c1:8cb:66e8:ca66"}
+[2025-06-12 16:27:33] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a734:a800:60c1:8cb:66e8:ca66
+[2025-06-12 16:27:33] MongoDB connection established
+[2025-06-12 16:27:33] SUCCESS: Vote saved for 'Kowismo' with ID: 684ae3d528649a90b9081ac9
+[2025-06-12 16:27:33] === CALLBACK END ===
+
+[2025-06-12 18:42:53] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-12 18:42:53] TopG IP resolved to: 54.36.225.177
+[2025-06-12 18:42:53] GET parameters: {"p_resp":"AlvaRoniXs","ip":"2003:c5:df3e:524d:2005:8618:5053:15c2"}
+[2025-06-12 18:42:53] [GET] Parameters: username(p_resp)=AlvaRoniXs voter_ip=2003:c5:df3e:524d:2005:8618:5053:15c2
+[2025-06-12 18:42:53] MongoDB connection established
+[2025-06-12 18:42:53] SUCCESS: Vote saved for 'AlvaRoniXs' with ID: 684b038db5d0d389c0050b5a
+[2025-06-12 18:42:53] === CALLBACK END ===
+
+[2025-06-13 17:35:04] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-13 17:35:04] TopG IP resolved to: 54.36.225.177
+[2025-06-13 17:35:04] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df3e:52f5:cde1:febb:77d:5dc5"}
+[2025-06-13 17:35:04] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df3e:52f5:cde1:febb:77d:5dc5
+[2025-06-13 17:35:04] MongoDB connection established
+[2025-06-13 17:35:04] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 684c452828649a90b9081aca
+[2025-06-13 17:35:04] === CALLBACK END ===
+
+[2025-06-13 20:44:19] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-13 20:44:19] TopG IP resolved to: 54.36.225.177
+[2025-06-13 20:44:19] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a71d:d00:c9c:f354:ab98:f6d1"}
+[2025-06-13 20:44:19] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a71d:d00:c9c:f354:ab98:f6d1
+[2025-06-13 20:44:19] MongoDB connection established
+[2025-06-13 20:44:19] SUCCESS: Vote saved for 'Kowismo' with ID: 684c7183b5d0d389c0050b5b
+[2025-06-13 20:44:19] === CALLBACK END ===
+
+[2025-06-15 09:38:25] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-15 09:38:25] TopG IP resolved to: 54.36.225.177
+[2025-06-15 09:38:25] GET parameters: {"p_resp":"Columb","ip":"91.90.11.212"}
+[2025-06-15 09:38:25] [GET] Parameters: username(p_resp)=Columb voter_ip=91.90.11.212
+[2025-06-15 09:38:25] MongoDB connection established
+[2025-06-15 09:38:25] SUCCESS: Vote saved for 'Columb' with ID: 684e7871151b700d87000cf3
+[2025-06-15 09:38:25] === CALLBACK END ===
+
+[2025-06-15 21:30:03] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-15 21:30:03] TopG IP resolved to: 54.36.225.177
+[2025-06-15 21:30:03] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a713:8300:a151:a203:cc5a:4f16"}
+[2025-06-15 21:30:03] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a713:8300:a151:a203:cc5a:4f16
+[2025-06-15 21:30:03] MongoDB connection established
+[2025-06-15 21:30:03] SUCCESS: Vote saved for 'Kowismo' with ID: 684f1f3bb5d0d389c0050b5c
+[2025-06-15 21:30:03] === CALLBACK END ===
+
+[2025-06-16 10:47:27] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-16 10:47:27] TopG IP resolved to: 54.36.225.177
+[2025-06-16 10:47:27] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df15:efec:a4ac:f232:b341:6996"}
+[2025-06-16 10:47:27] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df15:efec:a4ac:f232:b341:6996
+[2025-06-16 10:47:27] MongoDB connection established
+[2025-06-16 10:47:27] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 684fda1f151b700d87000cf4
+[2025-06-16 10:47:27] === CALLBACK END ===
+
+[2025-06-17 02:35:43] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-17 02:35:43] TopG IP resolved to: 54.36.225.177
+[2025-06-17 02:35:43] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df15:ef72:e8c7:8db4:a77e:ec9f"}
+[2025-06-17 02:35:43] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df15:ef72:e8c7:8db4:a77e:ec9f
+[2025-06-17 02:35:43] MongoDB connection established
+[2025-06-17 02:35:43] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 6850b85f28649a90b9081acc
+[2025-06-17 02:35:43] === CALLBACK END ===
+
+[2025-06-20 20:49:31] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-20 20:49:31] TopG IP resolved to: 54.36.225.177
+[2025-06-20 20:49:31] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a740:6a00:95cb:dbab:8b6b:5434"}
+[2025-06-20 20:49:31] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a740:6a00:95cb:dbab:8b6b:5434
+[2025-06-20 20:49:31] MongoDB connection established
+[2025-06-20 20:49:31] SUCCESS: Vote saved for 'Kowismo' with ID: 6855ad3b95bb566fa80400b4
+[2025-06-20 20:49:31] === CALLBACK END ===
+
+[2025-06-21 19:56:28] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-21 19:56:28] TopG IP resolved to: 54.36.225.177
+[2025-06-21 19:56:28] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a700:100:4884:5c14:79c5:ef20"}
+[2025-06-21 19:56:28] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a700:100:4884:5c14:79c5:ef20
+[2025-06-21 19:56:28] MongoDB connection established
+[2025-06-21 19:56:28] SUCCESS: Vote saved for 'Kowismo' with ID: 6856f24c0b07a2e3ab025b74
+[2025-06-21 19:56:28] === CALLBACK END ===
+
+[2025-06-22 09:04:36] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-22 09:04:36] TopG IP resolved to: 54.36.225.177
+[2025-06-22 09:04:36] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a70f:cf00:4884:5c14:79c5:ef20"}
+[2025-06-22 09:04:36] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a70f:cf00:4884:5c14:79c5:ef20
+[2025-06-22 09:04:36] MongoDB connection established
+[2025-06-22 09:04:36] SUCCESS: Vote saved for 'Kowismo' with ID: 6857ab040b07a2e3ab025b75
+[2025-06-22 09:04:36] === CALLBACK END ===
+
+[2025-06-23 08:46:07] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-23 08:46:07] TopG IP resolved to: 54.36.225.177
+[2025-06-23 08:46:07] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a71d:7700:7d20:9675:b729:ded9"}
+[2025-06-23 08:46:07] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a71d:7700:7d20:9675:b729:ded9
+[2025-06-23 08:46:07] MongoDB connection established
+[2025-06-23 08:46:07] SUCCESS: Vote saved for 'Kowismo' with ID: 6858f82f95bb566fa80400b5
+[2025-06-23 08:46:07] === CALLBACK END ===
+
+[2025-06-23 09:10:13] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-23 09:10:13] TopG IP resolved to: 54.36.225.177
+[2025-06-23 09:10:13] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df15:ef02:1820:77f2:4862:e854"}
+[2025-06-23 09:10:13] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df15:ef02:1820:77f2:4862:e854
+[2025-06-23 09:10:13] MongoDB connection established
+[2025-06-23 09:10:13] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 6858fdd50b07a2e3ab025b76
+[2025-06-23 09:10:13] === CALLBACK END ===
+
+[2025-06-23 11:28:48] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-23 11:28:48] TopG IP resolved to: 54.36.225.177
+[2025-06-23 11:28:48] GET parameters: {"p_resp":"Columb","ip":"91.90.11.212"}
+[2025-06-23 11:28:48] [GET] Parameters: username(p_resp)=Columb voter_ip=91.90.11.212
+[2025-06-23 11:28:48] MongoDB connection established
+[2025-06-23 11:28:48] SUCCESS: Vote saved for 'Columb' with ID: 68591e500b07a2e3ab025b77
+[2025-06-23 11:28:48] === CALLBACK END ===
+
+[2025-06-24 09:50:50] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-24 09:50:50] TopG IP resolved to: 54.36.225.177
+[2025-06-24 09:50:50] GET parameters: {"p_resp":"Columb","ip":"91.90.11.212"}
+[2025-06-24 09:50:50] [GET] Parameters: username(p_resp)=Columb voter_ip=91.90.11.212
+[2025-06-24 09:50:50] MongoDB connection established
+[2025-06-24 09:50:50] SUCCESS: Vote saved for 'Columb' with ID: 685a58da0b07a2e3ab025b78
+[2025-06-24 09:50:50] === CALLBACK END ===
+
+[2025-06-24 13:30:32] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-24 13:30:32] TopG IP resolved to: 54.36.225.177
+[2025-06-24 13:30:32] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a74a:2a00:c073:f4cd:8dbb:6c6c"}
+[2025-06-24 13:30:32] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a74a:2a00:c073:f4cd:8dbb:6c6c
+[2025-06-24 13:30:32] MongoDB connection established
+[2025-06-24 13:30:32] SUCCESS: Vote saved for 'Kowismo' with ID: 685a8c580b07a2e3ab025b79
+[2025-06-24 13:30:32] === CALLBACK END ===
+
+[2025-06-26 18:47:33] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-26 18:47:33] TopG IP resolved to: 54.36.225.177
+[2025-06-26 18:47:33] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a710:ca00:f1cf:23dc:a761:cfec"}
+[2025-06-26 18:47:33] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a710:ca00:f1cf:23dc:a761:cfec
+[2025-06-26 18:47:33] MongoDB connection established
+[2025-06-26 18:47:33] SUCCESS: Vote saved for 'Kowismo' with ID: 685d79a5fd209ccf7d01ba94
+[2025-06-26 18:47:33] === CALLBACK END ===
+
+[2025-06-27 18:18:56] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-27 18:18:56] TopG IP resolved to: 54.36.225.177
+[2025-06-27 18:18:56] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a714:7b00:380f:1e0d:184:54ed"}
+[2025-06-27 18:18:56] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a714:7b00:380f:1e0d:184:54ed
+[2025-06-27 18:18:56] MongoDB connection established
+[2025-06-27 18:18:56] SUCCESS: Vote saved for 'Kowismo' with ID: 685ec4707ca6905b580b10b4
+[2025-06-27 18:18:56] === CALLBACK END ===
+
+[2025-06-28 08:47:50] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-28 08:47:50] TopG IP resolved to: 54.36.225.177
+[2025-06-28 08:47:50] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a706:bc00:2c33:8ece:ec8f:90f3"}
+[2025-06-28 08:47:50] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a706:bc00:2c33:8ece:ec8f:90f3
+[2025-06-28 08:47:50] MongoDB connection established
+[2025-06-28 08:47:50] SUCCESS: Vote saved for 'Kowismo' with ID: 685f90167ca6905b580b10b5
+[2025-06-28 08:47:50] === CALLBACK END ===
+
+[2025-06-29 21:33:08] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-29 21:33:08] TopG IP resolved to: 54.36.225.177
+[2025-06-29 21:33:08] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df37:1732:45a:607b:9272:ae5c"}
+[2025-06-29 21:33:08] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df37:1732:45a:607b:9272:ae5c
+[2025-06-29 21:33:08] MongoDB connection established
+[2025-06-29 21:33:08] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 686194f47ca6905b580b10b6
+[2025-06-29 21:33:08] === CALLBACK END ===
+
+[2025-06-29 21:33:51] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-29 21:33:51] TopG IP resolved to: 54.36.225.177
+[2025-06-29 21:33:51] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a737:3300:98eb:e50d:ed57:27b1"}
+[2025-06-29 21:33:51] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a737:3300:98eb:e50d:ed57:27b1
+[2025-06-29 21:33:51] MongoDB connection established
+[2025-06-29 21:33:51] SUCCESS: Vote saved for 'Kowismo' with ID: 6861951ffd209ccf7d01ba95
+[2025-06-29 21:33:51] === CALLBACK END ===
+
+[2025-06-30 17:52:05] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-06-30 17:52:05] TopG IP resolved to: 54.36.225.177
+[2025-06-30 17:52:05] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a74e:c600:c8e4:b847:a11c:40be"}
+[2025-06-30 17:52:05] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a74e:c600:c8e4:b847:a11c:40be
+[2025-06-30 17:52:05] MongoDB connection established
+[2025-06-30 17:52:05] SUCCESS: Vote saved for 'Kowismo' with ID: 6862b2a5fd209ccf7d01ba96
+[2025-06-30 17:52:05] === CALLBACK END ===
+
+[2025-07-01 20:45:48] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-01 20:45:48] TopG IP resolved to: 54.36.225.177
+[2025-07-01 20:45:48] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a718:a700:dd11:d4d5:b69a:b296"}
+[2025-07-01 20:45:48] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a718:a700:dd11:d4d5:b69a:b296
+[2025-07-01 20:45:48] MongoDB connection established
+[2025-07-01 20:45:48] SUCCESS: Vote saved for 'Kowismo' with ID: 68642cdcfd209ccf7d01ba97
+[2025-07-01 20:45:48] === CALLBACK END ===
+
+[2025-07-03 20:50:27] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-03 20:50:27] TopG IP resolved to: 54.36.225.177
+[2025-07-03 20:50:27] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a71a:5100:40b5:57c2:3083:c60c"}
+[2025-07-03 20:50:27] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a71a:5100:40b5:57c2:3083:c60c
+[2025-07-03 20:50:27] MongoDB connection established
+[2025-07-03 20:50:27] SUCCESS: Vote saved for 'Kowismo' with ID: 6866d0f37ca6905b580b10b7
+[2025-07-03 20:50:27] === CALLBACK END ===
+
+[2025-07-04 09:17:42] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-04 09:17:42] TopG IP resolved to: 54.36.225.177
+[2025-07-04 09:17:42] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df37:1789:6590:1e58:8e69:1983"}
+[2025-07-04 09:17:42] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df37:1789:6590:1e58:8e69:1983
+[2025-07-04 09:17:42] MongoDB connection established
+[2025-07-04 09:17:42] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 686780167fde01c28706e394
+[2025-07-04 09:17:42] === CALLBACK END ===
+
+[2025-07-06 10:53:37] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-06 10:53:37] TopG IP resolved to: 54.36.225.177
+[2025-07-06 10:53:37] GET parameters: {"p_resp":"Columb","ip":"91.90.11.213"}
+[2025-07-06 10:53:37] [GET] Parameters: username(p_resp)=Columb voter_ip=91.90.11.213
+[2025-07-06 10:53:37] MongoDB connection established
+[2025-07-06 10:53:37] SUCCESS: Vote saved for 'Columb' with ID: 686a39917fde01c28706e395
+[2025-07-06 10:53:37] === CALLBACK END ===
+
+[2025-07-06 16:09:01] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-06 16:09:01] TopG IP resolved to: 54.36.225.177
+[2025-07-06 16:09:01] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a70b:7100:4829:3b9:66b2:fd1"}
+[2025-07-06 16:09:01] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a70b:7100:4829:3b9:66b2:fd1
+[2025-07-06 16:09:01] MongoDB connection established
+[2025-07-06 16:09:01] SUCCESS: Vote saved for 'Kowismo' with ID: 686a837d8a15e451e8099ca4
+[2025-07-06 16:09:01] === CALLBACK END ===
+
+[2025-07-07 19:00:29] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-07 19:00:29] TopG IP resolved to: 54.36.225.177
+[2025-07-07 19:00:29] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a72c:f900:1508:19c2:7a3e:84ee"}
+[2025-07-07 19:00:29] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a72c:f900:1508:19c2:7a3e:84ee
+[2025-07-07 19:00:29] MongoDB connection established
+[2025-07-07 19:00:29] SUCCESS: Vote saved for 'Kowismo' with ID: 686bfd2d8a15e451e8099ca5
+[2025-07-07 19:00:29] === CALLBACK END ===
+
+[2025-07-08 08:04:59] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-08 08:04:59] TopG IP resolved to: 54.36.225.177
+[2025-07-08 08:04:59] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a714:900:8d8:7a5b:989c:5677"}
+[2025-07-08 08:04:59] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a714:900:8d8:7a5b:989c:5677
+[2025-07-08 08:04:59] MongoDB connection established
+[2025-07-08 08:04:59] SUCCESS: Vote saved for 'Kowismo' with ID: 686cb50b7fde01c28706e396
+[2025-07-08 08:04:59] === CALLBACK END ===
+
+[2025-07-09 22:34:21] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-09 22:34:21] TopG IP resolved to: 54.36.225.177
+[2025-07-09 22:34:21] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a702:3600:11cd:202d:60da:9334"}
+[2025-07-09 22:34:21] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a702:3600:11cd:202d:60da:9334
+[2025-07-09 22:34:21] MongoDB connection established
+[2025-07-09 22:34:21] SUCCESS: Vote saved for 'Kowismo' with ID: 686ed24d7fde01c28706e397
+[2025-07-09 22:34:21] === CALLBACK END ===
+
+[2025-07-11 16:42:42] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-11 16:42:42] TopG IP resolved to: 54.36.225.177
+[2025-07-11 16:42:42] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a707:4600:d48e:709d:8f84:b689"}
+[2025-07-11 16:42:42] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a707:4600:d48e:709d:8f84:b689
+[2025-07-11 16:42:42] MongoDB connection established
+[2025-07-11 16:42:42] SUCCESS: Vote saved for 'Kowismo' with ID: 687122e28a15e451e8099ca6
+[2025-07-11 16:42:42] === CALLBACK END ===
+
+[2025-07-14 18:31:25] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-14 18:31:25] TopG IP resolved to: 54.36.225.177
+[2025-07-14 18:31:25] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a74a:dc00:b5f7:63ae:1be6:3cf9"}
+[2025-07-14 18:31:25] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a74a:dc00:b5f7:63ae:1be6:3cf9
+[2025-07-14 18:31:25] MongoDB connection established
+[2025-07-14 18:31:25] SUCCESS: Vote saved for 'Kowismo' with ID: 687530dd274657b05f005f97
+[2025-07-14 18:31:25] === CALLBACK END ===
+
+[2025-07-16 16:17:37] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-16 16:17:37] TopG IP resolved to: 54.36.225.177
+[2025-07-16 16:17:37] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df1d:4fb7:d56:85d4:c23f:e1e5"}
+[2025-07-16 16:17:37] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df1d:4fb7:d56:85d4:c23f:e1e5
+[2025-07-16 16:17:37] MongoDB connection established
+[2025-07-16 16:17:37] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 6877b481274657b05f005f98
+[2025-07-16 16:17:37] === CALLBACK END ===
+
+[2025-07-17 16:43:09] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-17 16:43:09] TopG IP resolved to: 54.36.225.177
+[2025-07-17 16:43:09] GET parameters: {"p_resp":"AlvaRoniX","ip":"2003:c5:df1d:4f16:d56:85d4:c23f:e1e5"}
+[2025-07-17 16:43:09] [GET] Parameters: username(p_resp)=AlvaRoniX voter_ip=2003:c5:df1d:4f16:d56:85d4:c23f:e1e5
+[2025-07-17 16:43:09] MongoDB connection established
+[2025-07-17 16:43:09] SUCCESS: Vote saved for 'AlvaRoniX' with ID: 68790bfd9d9295346b0688d4
+[2025-07-17 16:43:09] === CALLBACK END ===
+
+[2025-07-18 09:13:20] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-18 09:13:20] TopG IP resolved to: 54.36.225.177
+[2025-07-18 09:13:20] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a736:f700:199:7788:c2c4:223f"}
+[2025-07-18 09:13:20] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a736:f700:199:7788:c2c4:223f
+[2025-07-18 09:13:20] MongoDB connection established
+[2025-07-18 09:13:20] SUCCESS: Vote saved for 'Kowismo' with ID: 6879f4109d9295346b0688d5
+[2025-07-18 09:13:20] === CALLBACK END ===
+
+[2025-07-19 12:48:47] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-19 12:48:47] TopG IP resolved to: 54.36.225.177
+[2025-07-19 12:48:47] GET parameters: {"p_resp":"AlvaRoniXs","ip":"2a01:599:c22:7dce:c19e:6f45:53d:932d"}
+[2025-07-19 12:48:47] [GET] Parameters: username(p_resp)=AlvaRoniXs voter_ip=2a01:599:c22:7dce:c19e:6f45:53d:932d
+[2025-07-19 12:48:47] MongoDB connection established
+[2025-07-19 12:48:47] SUCCESS: Vote saved for 'AlvaRoniXs' with ID: 687b780f9d9295346b0688d7
+[2025-07-19 12:48:47] === CALLBACK END ===
+
+[2025-07-21 20:58:18] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-21 20:58:18] TopG IP resolved to: 54.36.225.177
+[2025-07-21 20:58:18] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a701:9900:7186:2038:63a5:e79c"}
+[2025-07-21 20:58:18] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a701:9900:7186:2038:63a5:e79c
+[2025-07-21 20:58:18] MongoDB connection established
+[2025-07-21 20:58:18] SUCCESS: Vote saved for 'Kowismo' with ID: 687e8dca274657b05f005f9b
+[2025-07-21 20:58:18] === CALLBACK END ===
+
+[2025-07-26 17:00:39] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-26 17:00:39] TopG IP resolved to: 54.36.225.177
+[2025-07-26 17:00:39] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a708:d00:1914:5933:f5a6:2f86"}
+[2025-07-26 17:00:39] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a708:d00:1914:5933:f5a6:2f86
+[2025-07-26 17:00:39] MongoDB connection established
+[2025-07-26 17:00:39] SUCCESS: Vote saved for 'Kowismo' with ID: 6884ed97274657b05f005f9c
+[2025-07-26 17:00:39] === CALLBACK END ===
+
+[2025-07-28 13:30:03] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-28 13:30:03] TopG IP resolved to: 54.36.225.177
+[2025-07-28 13:30:03] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-07-28 13:30:03] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-07-28 13:30:03] MongoDB connection established
+[2025-07-28 13:30:03] SUCCESS: Vote saved for 'eoLithick' with ID: 68875f3b9d9295346b0688d8
+[2025-07-28 13:30:03] === CALLBACK END ===
+
+[2025-07-30 08:13:05] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-30 08:13:05] TopG IP resolved to: 54.36.225.177
+[2025-07-30 08:13:05] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-07-30 08:13:05] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-07-30 08:13:05] MongoDB connection established
+[2025-07-30 08:13:05] SUCCESS: Vote saved for 'eoLithick' with ID: 6889b7f19d9295346b0688e0
+[2025-07-30 08:13:05] === CALLBACK END ===
+
+[2025-07-31 13:16:56] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-31 13:16:56] TopG IP resolved to: 54.36.225.177
+[2025-07-31 13:16:56] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-07-31 13:16:56] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-07-31 13:16:56] MongoDB connection established
+[2025-07-31 13:16:56] SUCCESS: Vote saved for 'eoLithick' with ID: 688b50a89d9295346b0688e1
+[2025-07-31 13:16:56] === CALLBACK END ===
+
+[2025-07-31 20:10:22] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-07-31 20:10:22] TopG IP resolved to: 54.36.225.177
+[2025-07-31 20:10:22] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a743:5b00:453:15aa:f08:1d3a"}
+[2025-07-31 20:10:22] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a743:5b00:453:15aa:f08:1d3a
+[2025-07-31 20:10:22] MongoDB connection established
+[2025-07-31 20:10:22] SUCCESS: Vote saved for 'Kowismo' with ID: 688bb18e274657b05f005fa0
+[2025-07-31 20:10:22] === CALLBACK END ===
+
+[2025-08-01 11:34:00] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-01 11:34:00] TopG IP resolved to: 54.36.225.177
+[2025-08-01 11:34:00] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-01 11:34:00] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-01 11:34:00] MongoDB connection established
+[2025-08-01 11:34:00] SUCCESS: Vote saved for 'eoLithick' with ID: 688c8a08274657b05f005fa1
+[2025-08-01 11:34:00] === CALLBACK END ===
+
+[2025-08-02 07:55:26] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-02 07:55:26] TopG IP resolved to: 54.36.225.177
+[2025-08-02 07:55:26] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-02 07:55:26] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-02 07:55:26] MongoDB connection established
+[2025-08-02 07:55:26] SUCCESS: Vote saved for 'eoLithick' with ID: 688da84e274657b05f005fa2
+[2025-08-02 07:55:26] === CALLBACK END ===
+
+[2025-08-02 23:15:11] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-02 23:15:11] TopG IP resolved to: 54.36.225.177
+[2025-08-02 23:15:11] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-02 23:15:11] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-02 23:15:11] MongoDB connection established
+[2025-08-02 23:15:11] SUCCESS: Vote saved for 'eoLithick' with ID: 688e7fdf9d9295346b0688e2
+[2025-08-02 23:15:11] === CALLBACK END ===
+
+[2025-08-04 00:03:47] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-04 00:03:47] TopG IP resolved to: 54.36.225.177
+[2025-08-04 00:03:47] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-04 00:03:47] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-04 00:03:47] MongoDB connection established
+[2025-08-04 00:03:47] SUCCESS: Vote saved for 'eoLithick' with ID: 688fdcc3274657b05f005fa3
+[2025-08-04 00:03:47] === CALLBACK END ===
+
+[2025-08-04 16:44:16] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-04 16:44:16] TopG IP resolved to: 54.36.225.177
+[2025-08-04 16:44:16] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-04 16:44:16] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-04 16:44:16] MongoDB connection established
+[2025-08-04 16:44:16] SUCCESS: Vote saved for 'eoLithick' with ID: 6890c7401573d2f04e0a5b24
+[2025-08-04 16:44:16] === CALLBACK END ===
+
+[2025-08-05 08:39:51] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-05 08:39:51] TopG IP resolved to: 54.36.225.177
+[2025-08-05 08:39:51] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-05 08:39:51] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-05 08:39:51] MongoDB connection established
+[2025-08-05 08:39:51] SUCCESS: Vote saved for 'eoLithick' with ID: 6891a7371573d2f04e0a5b25
+[2025-08-05 08:39:51] === CALLBACK END ===
+
+[2025-08-06 08:10:57] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-06 08:10:57] TopG IP resolved to: 54.36.225.177
+[2025-08-06 08:10:57] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-06 08:10:57] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-06 08:10:57] MongoDB connection established
+[2025-08-06 08:10:57] SUCCESS: Vote saved for 'eoLithick' with ID: 6892f1f19d9295346b0688e3
+[2025-08-06 08:10:57] === CALLBACK END ===
+
+[2025-08-07 08:03:57] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-07 08:03:57] TopG IP resolved to: 54.36.225.177
+[2025-08-07 08:03:57] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-07 08:03:57] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-07 08:03:57] MongoDB connection established
+[2025-08-07 08:03:57] SUCCESS: Vote saved for 'eoLithick' with ID: 689441cd9d9295346b0688e4
+[2025-08-07 08:03:57] === CALLBACK END ===
+
+[2025-08-08 09:40:12] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-08 09:40:12] TopG IP resolved to: 54.36.225.177
+[2025-08-08 09:40:12] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-08 09:40:12] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-08 09:40:12] MongoDB connection established
+[2025-08-08 09:40:12] SUCCESS: Vote saved for 'eoLithick' with ID: 6895a9dc1573d2f04e0a5b26
+[2025-08-08 09:40:12] === CALLBACK END ===
+
+[2025-08-09 14:02:15] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-09 14:02:15] TopG IP resolved to: 54.36.225.177
+[2025-08-09 14:02:15] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-09 14:02:15] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-09 14:02:15] MongoDB connection established
+[2025-08-09 14:02:15] SUCCESS: Vote saved for 'eoLithick' with ID: 689738c71573d2f04e0a5b27
+[2025-08-09 14:02:15] === CALLBACK END ===
+
+[2025-08-10 08:19:30] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-10 08:19:30] TopG IP resolved to: 54.36.225.177
+[2025-08-10 08:19:30] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-10 08:19:30] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-10 08:19:30] MongoDB connection established
+[2025-08-10 08:19:30] SUCCESS: Vote saved for 'eoLithick' with ID: 689839f29d9295346b0688e5
+[2025-08-10 08:19:30] === CALLBACK END ===
+
+[2025-08-10 22:28:05] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-10 22:28:05] TopG IP resolved to: 54.36.225.177
+[2025-08-10 22:28:05] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-10 22:28:05] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-10 22:28:05] MongoDB connection established
+[2025-08-10 22:28:05] SUCCESS: Vote saved for 'eoLithick' with ID: 689900d51573d2f04e0a5b28
+[2025-08-10 22:28:05] === CALLBACK END ===
+
+[2025-08-12 08:51:04] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-12 08:51:04] TopG IP resolved to: 54.36.225.177
+[2025-08-12 08:51:04] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-12 08:51:04] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-12 08:51:04] MongoDB connection established
+[2025-08-12 08:51:04] SUCCESS: Vote saved for 'eoLithick' with ID: 689ae4589d9295346b0688e6
+[2025-08-12 08:51:04] === CALLBACK END ===
+
+[2025-08-13 08:47:20] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-13 08:47:20] TopG IP resolved to: 54.36.225.177
+[2025-08-13 08:47:20] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.212"}
+[2025-08-13 08:47:20] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.212
+[2025-08-13 08:47:20] MongoDB connection established
+[2025-08-13 08:47:20] SUCCESS: Vote saved for 'eoLithick' with ID: 689c34f8274657b05f005fa4
+[2025-08-13 08:47:20] === CALLBACK END ===
+
+[2025-08-17 18:40:02] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-17 18:40:02] TopG IP resolved to: 54.36.225.177
+[2025-08-17 18:40:02] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a70b:a100:303e:4ff1:a2b1:dd7e"}
+[2025-08-17 18:40:02] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a70b:a100:303e:4ff1:a2b1:dd7e
+[2025-08-17 18:40:02] MongoDB connection established
+[2025-08-17 18:40:02] SUCCESS: Vote saved for 'Kowismo' with ID: 68a205e2f1da2036e70bbfe4
+[2025-08-17 18:40:02] === CALLBACK END ===
+
+[2025-08-18 21:54:53] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-18 21:54:53] TopG IP resolved to: 54.36.225.177
+[2025-08-18 21:54:53] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a74d:f900:c5da:6f1c:1cec:882f"}
+[2025-08-18 21:54:53] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a74d:f900:c5da:6f1c:1cec:882f
+[2025-08-18 21:54:53] MongoDB connection established
+[2025-08-18 21:54:53] SUCCESS: Vote saved for 'Kowismo' with ID: 68a3850d8bcf35125d07cd95
+[2025-08-18 21:54:53] === CALLBACK END ===
+
+[2025-08-24 09:26:29] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-24 09:26:29] TopG IP resolved to: 54.36.225.177
+[2025-08-24 09:26:29] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.213"}
+[2025-08-24 09:26:29] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.213
+[2025-08-24 09:26:29] MongoDB connection established
+[2025-08-24 09:26:29] SUCCESS: Vote saved for 'eoLithick' with ID: 68aabea5f1da2036e70bbfe5
+[2025-08-24 09:26:29] === CALLBACK END ===
+
+[2025-08-25 11:02:04] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-25 11:02:04] TopG IP resolved to: 54.36.225.177
+[2025-08-25 11:02:04] GET parameters: {"p_resp":"eoLithick","ip":"91.90.11.213"}
+[2025-08-25 11:02:04] [GET] Parameters: username(p_resp)=eoLithick voter_ip=91.90.11.213
+[2025-08-25 11:02:04] MongoDB connection established
+[2025-08-25 11:02:04] SUCCESS: Vote saved for 'eoLithick' with ID: 68ac268c2ff10f013702c474
+[2025-08-25 11:02:04] === CALLBACK END ===
+
+[2025-08-25 14:44:34] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-25 14:44:34] TopG IP resolved to: 54.36.225.177
+[2025-08-25 14:44:34] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a74e:5100:178:ef40:f9e9:58d"}
+[2025-08-25 14:44:34] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a74e:5100:178:ef40:f9e9:58d
+[2025-08-25 14:44:34] MongoDB connection established
+[2025-08-25 14:44:34] SUCCESS: Vote saved for 'Kowismo' with ID: 68ac5ab2962dbf775c07d074
+[2025-08-25 14:44:34] === CALLBACK END ===
+
+[2025-08-27 18:36:25] === NEW CALLBACK from IP: 54.36.225.177 ===
+[2025-08-27 18:36:25] TopG IP resolved to: 54.36.225.177
+[2025-08-27 18:36:25] GET parameters: {"p_resp":"Kowismo","ip":"2003:c9:a724:4a00:1c01:94a7:ffeb:81bb"}
+[2025-08-27 18:36:25] [GET] Parameters: username(p_resp)=Kowismo voter_ip=2003:c9:a724:4a00:1c01:94a7:ffeb:81bb
+[2025-08-27 18:36:25] MongoDB connection established
+[2025-08-27 18:36:25] SUCCESS: Vote saved for 'Kowismo' with ID: 68af3409962dbf775c07d076
+[2025-08-27 18:36:25] === CALLBACK END ===
+

@@ -1,0 +1,16 @@
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Channel creation process started
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] User has correct permissions
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] User has a channel in the other system (privateChannels), channel ID: 112823
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Deleting old channel from other system, ID: 112823
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Channel switch cooldown set for 24 hours
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] User does not have an existing channel, creating new one
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Attempting to create channel #2
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Channel creation result: {"success":true,"errors":[],"data":{"cid":"112824","cpid":"47","channel_name":"2. Private channel: AmasHa","channel_codec_quality":"10","channel_order":"103497","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"60881","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Channel created successfully with ID: 112824
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Creating subchannel #1
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Creating subchannel #2
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Setting channel group 32 for user
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Moving client to new channel
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Sending success messages to client
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Saving channel to database
+[2025-07-30 06:22:31] [4pxqcXPFIvehTcYkt1gNOsP8Sc0=] [AmasHa] Successfully created private channel with number 2

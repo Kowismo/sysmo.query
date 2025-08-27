@@ -1,0 +1,17 @@
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel creation process started
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] User has correct permissions
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] User does not have an existing channel, creating new one
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Attempting to create channel #30
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel creation result: {"success":true,"errors":[],"data":{"cid":"108948","cpid":"55","channel_name":"30. Private channel: Musto","channel_codec_quality":"10","channel_order":"108644","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"14867","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel created successfully with ID: 108948
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Setting channel group 32 for user
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Moving client to new channel
+[2025-07-02 17:00:52] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Sending success messages to client
+[2025-07-02 17:00:53] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Saving channel to database
+[2025-07-02 17:00:53] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Successfully created private channel with number 30
+[2025-07-02 19:19:13] [XEonT/3zelca+6gc/7xktWENvIg=] [Claf3ec] Channel creation process started
+[2025-07-02 19:19:13] [XEonT/3zelca+6gc/7xktWENvIg=] [Claf3ec] User does not have required permissions. Groups: "8,278,369,420,435"
+[2025-07-02 22:14:18] [jZxfnlpNS5qUpqvFYHX/rsF3QFk=] [Balik-] Channel creation process started
+[2025-07-02 22:14:18] [jZxfnlpNS5qUpqvFYHX/rsF3QFk=] [Balik-] User does not have required permissions. Groups: "8,278,294,369,435"
+[2025-07-02 22:14:51] [jZxfnlpNS5qUpqvFYHX/rsF3QFk=] [Balik-] Channel creation process started
+[2025-07-02 22:14:51] [jZxfnlpNS5qUpqvFYHX/rsF3QFk=] [Balik-] User does not have required permissions. Groups: "8,278,294,369,435"

@@ -1,0 +1,11 @@
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Channel creation process started
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] User has correct permissions
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] User does not have an existing channel, creating new one
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Attempting to create channel #51
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Channel creation result: {"success":true,"errors":[],"data":{"cid":"105183","cpid":"55","channel_name":"51. Private channel: Faith","channel_codec_quality":"10","channel_order":"105153","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"29125","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Channel created successfully with ID: 105183
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Setting channel group 32 for user
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Moving client to new channel
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Sending success messages to client
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Saving channel to database
+[2025-06-04 06:35:13] [qCQuK6Is+deAhN2xl/XspjIz8xY=] [Faith] Successfully created private channel with number 51

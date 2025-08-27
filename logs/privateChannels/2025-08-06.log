@@ -1,0 +1,15 @@
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Channel creation process started
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] User has correct permissions
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] User does not have an existing channel, creating new one
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Attempting to create channel #34
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Channel creation result: {"success":true,"errors":[],"data":{"cid":"113672","cpid":"55","channel_name":"34. Private channel: Nghtly","channel_codec_quality":"10","channel_order":"113435","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"21301","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Channel created successfully with ID: 113672
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Setting channel group 32 for user
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Moving client to new channel
+[2025-08-06 13:26:02] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Sending success messages to client
+[2025-08-06 13:26:03] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Saving channel to database
+[2025-08-06 13:26:03] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Successfully created private channel with number 34
+[2025-08-06 13:26:09] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Channel creation process started
+[2025-08-06 13:26:09] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] User has correct permissions
+[2025-08-06 13:26:09] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] User already has a channel with ID: 113672
+[2025-08-06 13:26:09] [SD17ArPLxbgW8gNb6ICI1SlcTNs=] [Nghtly] Moving user to existing channel

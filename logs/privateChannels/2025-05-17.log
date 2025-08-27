@@ -1,0 +1,13 @@
+[2025-05-17 14:16:53] [mAPKIvAzjBzaATYpm8Psq4j9GQQ=] [Hamburger] Channel creation process started
+[2025-05-17 14:16:53] [mAPKIvAzjBzaATYpm8Psq4j9GQQ=] [Hamburger] User does not have required permissions. Groups: "8,276,278,369"
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Channel creation process started
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] User has correct permissions
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] User does not have an existing channel, creating new one
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Attempting to create channel #48
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Channel creation result: {"success":true,"errors":[],"data":{"cid":"102261","cpid":"55","channel_name":"48. Private channel: Hamburger","channel_codec_quality":"10","channel_order":"102033","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"22663","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Channel created successfully with ID: 102261
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Setting channel group 31 for user
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Moving client to new channel
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Sending success messages to client
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Saving channel to database
+[2025-05-17 14:17:09] [xP+cajxpVG4mMrTOKROM/WsK4pw=] [Hamburger] Successfully created private channel with number 48

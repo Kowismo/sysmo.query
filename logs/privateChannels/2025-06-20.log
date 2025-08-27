@@ -1,0 +1,15 @@
+[2025-06-20 04:46:23] [P2xSB5Cf7kdbT7sUkVxBturQIC8=] [Caylan agr] Channel creation process started
+[2025-06-20 04:46:23] [P2xSB5Cf7kdbT7sUkVxBturQIC8=] [Caylan agr] User does not have required permissions. Groups: "8,278,339,369,435"
+[2025-06-20 04:47:57] [P2xSB5Cf7kdbT7sUkVxBturQIC8=] [Caylan agr] Channel creation process started
+[2025-06-20 04:47:57] [P2xSB5Cf7kdbT7sUkVxBturQIC8=] [Caylan agr] User does not have required permissions. Groups: "8,278,339,369,435"
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Channel creation process started
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] User has correct permissions
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] User does not have an existing channel, creating new one
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Attempting to create channel #34
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Channel creation result: {"success":true,"errors":[],"data":{"cid":"107517","cpid":"55","channel_name":"34. Private channel: xonk","channel_codec_quality":"10","channel_order":"107239","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"32716","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Channel created successfully with ID: 107517
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Setting channel group 32 for user
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Moving client to new channel
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Sending success messages to client
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Saving channel to database
+[2025-06-20 20:58:13] [C9BaIma81a758BlADaW/PBQUtgk=] [xonk] Successfully created private channel with number 34

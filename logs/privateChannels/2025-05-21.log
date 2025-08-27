@@ -1,0 +1,11 @@
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Channel creation process started
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] User has correct permissions
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] User does not have an existing channel, creating new one
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Attempting to create channel #47
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Channel creation result: {"success":true,"errors":[],"data":{"cid":"102948","cpid":"55","channel_name":"47. Private channel: Oleg","channel_codec_quality":"10","channel_order":"102012","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"30782","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Channel created successfully with ID: 102948
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Setting channel group 31 for user
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Moving client to new channel
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Sending success messages to client
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Saving channel to database
+[2025-05-21 16:13:33] [h0VuCZ2TUXFCJCTTYaDOlIsousY=] [Oleg] Successfully created private channel with number 47

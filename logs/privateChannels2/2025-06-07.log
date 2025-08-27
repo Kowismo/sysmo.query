@@ -1,0 +1,13 @@
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Channel creation process started
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] User has correct permissions
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] User does not have an existing channel, creating new one
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Attempting to create channel #3
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Channel creation result: {"success":true,"errors":[],"data":{"cid":"105634","cpid":"47","channel_name":"3. Private channel: haskielele","channel_codec_quality":"10","channel_order":"104444","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"29125","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Channel created successfully with ID: 105634
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Creating subchannel #1
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Creating subchannel #2
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Setting channel group 32 for user
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Moving client to new channel
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Sending success messages to client
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Saving channel to database
+[2025-06-07 00:54:44] [QKohFKSCK/+7nmxpojKJxYTwVE4=] [haskielele] Successfully created private channel with number 3

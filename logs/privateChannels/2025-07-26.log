@@ -1,0 +1,13 @@
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Channel creation process started
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] User has correct permissions
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] User does not have an existing channel, creating new one
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Attempting to create channel #38
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Channel creation result: {"success":true,"errors":[],"data":{"cid":"112350","cpid":"55","channel_name":"38. Private channel: sanq","channel_codec_quality":"10","channel_order":"111838","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"40865","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Channel created successfully with ID: 112350
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Setting channel group 32 for user
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Moving client to new channel
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Sending success messages to client
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Saving channel to database
+[2025-07-26 21:23:29] [Zn/9+bT2XSO9sc6lE0+QcGA4eu4=] [sanq] Successfully created private channel with number 38
+[2025-07-26 22:34:11] [0f3R0ozL2Ra0Pn2WxPluQEHe5yg=] [Dr.Dr.TobiasST] Channel creation process started
+[2025-07-26 22:34:11] [0f3R0ozL2Ra0Pn2WxPluQEHe5yg=] [Dr.Dr.TobiasST] User does not have required permissions. Groups: "8,276,278,369,435"

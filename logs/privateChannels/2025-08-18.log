@@ -1,0 +1,13 @@
+[2025-08-18 01:57:07] [5mlnexkGaMpHfqp50QKFdVVd+zs=] [Firiko] Channel creation process started
+[2025-08-18 01:57:07] [5mlnexkGaMpHfqp50QKFdVVd+zs=] [Firiko] User does not have required permissions. Groups: "8,278,295,369,435"
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Channel creation process started
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] User has correct permissions
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] User does not have an existing channel, creating new one
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Attempting to create channel #29
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Channel creation result: {"success":true,"errors":[],"data":{"cid":"115294","cpid":"55","channel_name":"29. Private channel: DarkZX","channel_codec_quality":"10","channel_order":"115084","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"4068","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Channel created successfully with ID: 115294
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Setting channel group 32 for user
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Moving client to new channel
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Sending success messages to client
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Saving channel to database
+[2025-08-18 18:43:16] [lqX2Oz/RGh+MQGKjhD9GbFED4OY=] [DarkZX] Successfully created private channel with number 29

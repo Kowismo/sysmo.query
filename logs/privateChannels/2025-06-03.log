@@ -1,0 +1,17 @@
+[2025-06-03 12:01:49] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] Channel creation process started
+[2025-06-03 12:01:49] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] User does not have required permissions. Groups: "8,278,299,369,435"
+[2025-06-03 12:01:56] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] Channel creation process started
+[2025-06-03 12:01:56] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] User does not have required permissions. Groups: "8,278,299,369,435"
+[2025-06-03 12:02:22] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] Channel creation process started
+[2025-06-03 12:02:22] [fq8wLYgY4o9i6ZEje66apKe/JUM=] [TeamSpeakUser] User does not have required permissions. Groups: "8,278,299,369,435"
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel creation process started
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] User has correct permissions
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] User does not have an existing channel, creating new one
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Attempting to create channel #50
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel creation result: {"success":true,"errors":[],"data":{"cid":"105153","cpid":"55","channel_name":"50. Private channel: Musto","channel_codec_quality":"10","channel_order":"104113","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"29125","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Channel created successfully with ID: 105153
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Setting channel group 32 for user
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Moving client to new channel
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Sending success messages to client
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Saving channel to database
+[2025-06-03 21:51:20] [MZWgndUXO6A0YcVlmWyBE1rQlnY=] [Musto] Successfully created private channel with number 50

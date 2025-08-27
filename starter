@@ -1,0 +1,66 @@
+#!/bin/bash
+
+version="1.0"
+core_name="app.php"
+screen_name="SYSMO_"
+author="SUGEREK"
+php_ver="PHP 7.4.24 (cli) (built: Sep 23 2021 22:09:39) ( NTS )"
+min="1"
+max="6"
+
+function success {
+    echo -e "\\033[32;1m${@}\033[0m"
+}
+
+function error {
+    echo -e "\\033[31;1m${@}\033[0m"
+}
+
+function warning {
+    echo -e "\\033[33;1m${@}\033[0m"
+}
+
+function info {
+    echo -e "\\033[34;1m${@}\033[0m"
+}
+
+if [ "$1" == "start" ]; then
+	while [ $min -le $max ] ; do
+		if ! screen -list | grep -w "$screen_name$min"; then
+			screen -dmS $screen_name$min php $core_name -i $min
+			success "Instance $min has been switched on!"
+		else
+			error "Instance $min is already on!"
+		fi
+	min=$[min + 1]
+	done
+elif [ "$1" == "stop" ]; then
+	while [ $min -le $max ] ; do
+		if screen -list | grep -w "$screen_name$min"; then
+			screen -X -S $screen_name$min quit
+			success "Instance $min has been deactivated!"
+		else
+			error "Instance $min is already off!"
+		fi
+	min=$[min + 1]
+	done
+elif [ "$1" == "restart" ]; then
+	while [ $min -le $max ] ; do
+		if screen -list | grep -w "$screen_name$min"; then
+			screen -X -S $screen_name$min quit
+			screen -dmS $screen_name$min php $core_name -i $min
+			success "Instance $min has been restarted!"
+		else
+			screen -dmS $screen_name$min php $core_name -i $min
+			success "Instance $min has been restarted!"
+		fi
+	min=$[min + 1]
+	done
+elif [ "$1" == "version" ]; then
+	echo -e "Query bot version: \033[34;1m$version\033[0m"
+	echo -e "The application, written by: \033[34;1m$author\033[0m"
+	echo -e "The bot has been tested on the php version: \033[34;1m$php_ver\033[0m"
+	echo -e "The starter author is: \033[34;1m_KrEdEnS_\033[0m"
+else
+	info './run [start|stop|restart/version]'
+fi

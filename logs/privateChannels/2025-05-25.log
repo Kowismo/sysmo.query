@@ -1,0 +1,14 @@
+[2025-05-25 03:20:12] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Channel creation process started
+[2025-05-25 03:20:12] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User has correct permissions
+[2025-05-25 03:20:12] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User already has a channel with ID: 65548
+[2025-05-25 03:20:12] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Moving user to existing channel
+[2025-05-25 03:24:41] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Channel creation process started
+[2025-05-25 03:24:41] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User has correct permissions
+[2025-05-25 03:24:41] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User has a channel in the other system (privateChannels2), channel ID: 103497
+[2025-05-25 03:24:41] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Channel switch cooldown active, remaining time: 23h 57m
+[2025-05-25 03:25:31] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Channel creation process started
+[2025-05-25 03:25:31] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User has correct permissions
+[2025-05-25 03:25:31] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] User has a channel in the other system (privateChannels2), channel ID: 103497
+[2025-05-25 03:25:31] [jWxbfxhLxs9dPa3t1WUnys7gnbk=] [Richard_TH] Channel switch cooldown active, remaining time: 23h 57m
+[2025-05-25 17:38:13] [Qe4PNcuI4cug44cbbrrVTFTlmRs=] [otcoci_u_deda] Channel creation process started
+[2025-05-25 17:38:13] [Qe4PNcuI4cug44cbbrrVTFTlmRs=] [otcoci_u_deda] User does not have required permissions. Groups: "9,278,296,369,435"

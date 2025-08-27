@@ -1,0 +1,13 @@
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Channel creation process started
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] User has correct permissions
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] User does not have an existing channel, creating new one
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Attempting to create channel #2
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Channel creation result: {"success":true,"errors":[],"data":{"cid":"115897","cpid":"47","channel_name":"2. Private channel: IHope3","channel_codec_quality":"10","channel_order":"103497","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"20509","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Channel created successfully with ID: 115897
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Creating subchannel #1
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Creating subchannel #2
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Setting channel group 32 for user
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Moving client to new channel
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Sending success messages to client
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Saving channel to database
+[2025-08-22 19:54:41] [PaRF3U3ZrnXZhkFR2i82tzNZY+Q=] [IHope3] Successfully created private channel with number 2

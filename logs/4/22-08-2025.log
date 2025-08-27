@@ -1,0 +1,8 @@
+[24-Aug-2025 18:08:18 Europe/Berlin] PHP Fatal error:  Uncaught MongoDB\Driver\Exception\ConnectionTimeoutException: No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling hello on '127.0.0.1:12345']. Topology type: Single in /home/query/vendor/mongodb/mongodb/src/functions.php:486
+Stack trace:
+#0 /home/query/vendor/mongodb/mongodb/src/functions.php(486): MongoDB\Driver\Manager->selectServer()
+#1 /home/query/vendor/mongodb/mongodb/src/Collection.php(672): MongoDB\select_server()
+#2 /home/query/functions/4/createClan.php(4): MongoDB\Collection->findOne()
+#3 /home/query/app.php(324): createClan->__construct()
+#4 {main}
+  thrown in /home/query/vendor/mongodb/mongodb/src/functions.php on line 486

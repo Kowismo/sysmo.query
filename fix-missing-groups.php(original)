@@ -1,0 +1,95 @@
+<?php
+// fix-missing-groups.php
+require_once('vendor/autoload.php');
+require_once('libs/ezApp.class.php'); // We still load the class to avoid errors
+
+$config = require_once 'configs/config.php';
+$instanceId = 2; // The bot responsible for groups
+
+// Custom function to check if client is in ignored groups
+function isInIgnoredGroups($client_groups, $ignoredGroups) {
+  foreach($ignoredGroups as $ig) {
+    if(in_array((string)$ig, $client_groups)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Establish connection
+$ts = new ts3admin($config[$instanceId]['connection']['teamspeakHost'], $config[$instanceId]['connection']['teamspeakPorts']['queryPort']);
+
+if($ts->connect()['success']) {
+  if($ts->login($config[$instanceId]['connection']['teamspeakLogin'], $config[$instanceId]['connection']['teamspeakPass'])['success']) {
+    if($ts->selectServer($config[$instanceId]['connection']['teamspeakPorts']['voicePort'])['success']) {
+      
+      // Load configurations
+      $countryConfig = $config[$instanceId]['functions']['notifycliententerview']['countryGroup'];
+      $platformConfig = $config[$instanceId]['functions']['notifycliententerview']['clientPlatform'];
+      
+      // Array of ignored groups
+      $countryIgnoredGroups = $countryConfig['ignoredGroups'];
+      $platformIgnoredGroups = $platformConfig['ignoredGroups'];
+      
+      // Load all clients
+      $clients = $ts->clientList('-uid -country -info')['data'];
+      
+      $added = 0;
+      $skipped = 0;
+      
+      foreach($clients as $client) {
+        if($client['client_type'] != 0) {
+          $skipped++;
+          continue; // Skip Query clients
+        }
+        
+        $clientInfo = $ts->clientInfo($client['clid'])['data'];
+        
+        // Make sure client_servergroups is a string
+        if (!isset($clientInfo['client_servergroups']) || !is_string($clientInfo['client_servergroups'])) {
+          $clientInfo['client_servergroups'] = '';
+        }
+        
+        $client_groups = explode(',', $clientInfo['client_servergroups']);
+        
+        // Skip clients with group ID 283 (Music bots)
+        if(in_array('283', $client_groups)) {
+          echo "Skipping music bot {$clientInfo['client_nickname']} (Group 283)\n";
+          $skipped++;
+          continue;
+        }
+        
+        // 1. Check and add country group
+        if(!isInIgnoredGroups($client_groups, $countryIgnoredGroups)) {
+          if(isset($clientInfo['client_country']) && isset($countryConfig['options'][$clientInfo['client_country']])) {
+            $countryGroup = $countryConfig['options'][$clientInfo['client_country']];
+            
+            // Check if the group is already assigned
+            if(!in_array((string)$countryGroup, $client_groups)) {
+              $ts->serverGroupAddClient($countryGroup, $clientInfo['client_database_id']);
+              echo "Added country group {$countryGroup} for client {$clientInfo['client_nickname']}\n";
+              $added++;
+            }
+          }
+        }
+        
+        // 2. Check and add platform group
+        if(!isInIgnoredGroups($client_groups, $platformIgnoredGroups)) {
+          if(isset($clientInfo['client_platform']) && isset($platformConfig['options'][$clientInfo['client_platform']])) {
+            $platformGroup = $platformConfig['options'][$clientInfo['client_platform']];
+            
+            // Check if the group is already assigned
+            if(!in_array((string)$platformGroup, $client_groups)) {
+              $ts->serverGroupAddClient($platformGroup, $clientInfo['client_database_id']);
+              echo "Added platform group {$platformGroup} for client {$clientInfo['client_nickname']}\n";
+              $added++;
+            }
+          }
+        }
+      }
+      
+      echo "Done! Added {$added} groups. Skipped {$skipped} clients.\n";
+    }
+  }
+}
+?>

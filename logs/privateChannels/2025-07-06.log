@@ -1,0 +1,11 @@
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Channel creation process started
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] User has correct permissions
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] User does not have an existing channel, creating new one
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Attempting to create channel #31
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Channel creation result: {"success":true,"errors":[],"data":{"cid":"109377","cpid":"55","channel_name":"31. Private channel: BIG FIUT","channel_codec_quality":"10","channel_order":"109053","channel_flag_permanent":"1","channel_flag_password":"1","channel_codec_is_unencrypted":"0","channel_flag_maxclients_unlimited":"1","channel_flag_maxfamilyclients_unlimited":"1","invokerid":"14867","invokername":"[#] Worker","invokeruid":"serveradminnotifychanneldescriptionchanged"}}
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Channel created successfully with ID: 109377
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Setting channel group 32 for user
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Moving client to new channel
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Sending success messages to client
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Saving channel to database
+[2025-07-06 01:24:41] [f12EdjHswKyOEFDyewEipDgzQi0=] [BIG FIUT] Successfully created private channel with number 31
