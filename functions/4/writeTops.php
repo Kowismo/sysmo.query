@@ -386,8 +386,8 @@ class writeTops {
                 }
             }
             
-            // Beschränke die Anzahl der Einträge
-            $maxYearlyEntries = floor($hallOfFameConfig['maxEntries'] * 0.2); // 20% für jährliche Einträge
+            // Beschränke die Anzahl der Einträge - aber mindestens 5
+            $maxYearlyEntries = max(5, floor($hallOfFameConfig['maxEntries'] * 0.3)); // 30% für jährliche Einträge, min 5
             if(count($yearlyEntries) > $maxYearlyEntries) {
                 $yearlyEntries = array_slice($yearlyEntries, 0, $maxYearlyEntries);
             }
@@ -417,8 +417,8 @@ class writeTops {
                 }
             }
             
-            // Beschränke die Anzahl der Einträge
-            $maxMonthlyEntries = floor($hallOfFameConfig['maxEntries'] * 0.8); // 80% für monatliche Einträge
+            // Beschränke die Anzahl der Einträge - aber mindestens 10
+            $maxMonthlyEntries = max(10, floor($hallOfFameConfig['maxEntries'] * 0.7)); // 70% für monatliche Einträge, min 10
             if(count($monthlyEntries) > $maxMonthlyEntries) {
                 $monthlyEntries = array_slice($monthlyEntries, 0, $maxMonthlyEntries);
             }

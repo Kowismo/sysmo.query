@@ -1294,9 +1294,9 @@ To make sure your bookmark uses our official domain:[/color] [url=ts3server://ts
                    ],
                ],
                'winnerGroups' => [
-   				'monthlyWinnerTemplate' => 436,
-   				'yearlyWinnerTemplate' => 437,
-   			],
+       // Update: feste Template-ID für Most Active Gruppen
+       'templateId' => 442,
+      ],
                'points' => [
                    'channelId' => 126,
                    'awardsEnabled' => true,

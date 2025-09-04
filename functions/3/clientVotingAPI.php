@@ -228,46 +228,59 @@ class clientVotingAPI {
             
             $clientDbId = $clientData['clientDatabaseId'];
             
-            // Prüfe Voting-Levels
+            // Finde das höchste Level, das der User verdient hat
+            $highestEligibleLevel = 0;
+            $highestLevelData = null;
+            
             foreach($cfg['voteLevels'] as $level => $levelData) {
-                if($totalVotes >= $levelData['votesRequired'] && $currentVoteLevel < $level) {
-                    $this->createLog($cfg, "Client " . $voter['clientNickname'] . " qualifies for level " . $level . " (has " . $totalVotes . " votes, needs " . $levelData['votesRequired'] . ")");
-                    
-                    // Entferne alte Vote-Gruppe
-                    if($currentVoteLevel > 0 && isset($cfg['voteLevels'][$currentVoteLevel])) {
-                        $ts->serverGroupDeleteClient($cfg['voteLevels'][$currentVoteLevel]['groupId'], $clientDbId);
-                        $this->createLog($cfg, "Removed old vote group " . $cfg['voteLevels'][$currentVoteLevel]['groupId']);
-                    }
-                    
-                    // Füge neue Vote-Gruppe hinzu
-                    try {
-                        $ts->serverGroupAddClient($levelData['groupId'], $clientDbId);
-                        $this->createLog($cfg, "Added vote group " . $levelData['groupId'] . " to client dbid " . $clientDbId);
-                        
-                        // Update in DB
-                        $mongoDB->clientVotes->updateOne(
-                            ['clientUniqueIdentifier' => $clientUID],
-                            ['$set' => ['voteLevel' => $level]]
-                        );
-                        
-                        // Sende Nachricht wenn Client online
-                        $onlineClient = $this->findOnlineClientByUID($ts, $clientUID);
-                        if($onlineClient) {
-                            $message = str_replace(
-                                ['%votes%', '%level%', '%groupName%'],
-                                [$totalVotes, $level, $levelData['groupName']],
-                                implode("\n", $cfg['messages']['voteLevelUp'])
-                            );
-                            $ts->sendMessage(1, $onlineClient['clid'], $message);
+                if($totalVotes >= $levelData['votesRequired'] && $level > $highestEligibleLevel) {
+                    $highestEligibleLevel = $level;
+                    $highestLevelData = $levelData;
+                }
+            }
+            
+            // Wenn User ein höheres Level verdient hat als aktuell
+            if($highestEligibleLevel > $currentVoteLevel) {
+                $this->createLog($cfg, "Client " . $voter['clientNickname'] . " qualifies for level " . $highestEligibleLevel . " (has " . $totalVotes . " votes, current level: " . $currentVoteLevel . ")");
+                
+                // Entferne ALLE niedrigeren Vote-Gruppen
+                foreach($cfg['voteLevels'] as $level => $levelData) {
+                    if($level < $highestEligibleLevel) {
+                        try {
+                            $ts->serverGroupDeleteClient($levelData['groupId'], $clientDbId);
+                            $this->createLog($cfg, "Removed lower vote group " . $levelData['groupId'] . " (level " . $level . ")");
+                        } catch(Exception $e) {
+                            // Ignoriere Fehler wenn Gruppe nicht zugewiesen war
                         }
-                        
-                        $ezApp->createLog($mongoDB, __CLASS__, $clientUID, 
-                                       $voter['clientNickname'], 'reached vote level ' . $level . ' with ' . $totalVotes . ' votes');
-                    } catch(Exception $e) {
-                        $this->createLog($cfg, "Error adding group: " . $e->getMessage());
+                    }
+                }
+                
+                // Füge die höchste Vote-Gruppe hinzu
+                try {
+                    $ts->serverGroupAddClient($highestLevelData['groupId'], $clientDbId);
+                    $this->createLog($cfg, "Added highest vote group " . $highestLevelData['groupId'] . " (level " . $highestEligibleLevel . ") to client dbid " . $clientDbId);
+                    
+                    // Update in DB
+                    $mongoDB->clientVotes->updateOne(
+                        ['clientUniqueIdentifier' => $clientUID],
+                        ['$set' => ['voteLevel' => $highestEligibleLevel]]
+                    );
+                    
+                    // Sende Nachricht wenn Client online
+                    $onlineClient = $this->findOnlineClientByUID($ts, $clientUID);
+                    if($onlineClient) {
+                        $message = str_replace(
+                            ['%votes%', '%level%', '%groupName%'],
+                            [$totalVotes, $highestEligibleLevel, $highestLevelData['groupName']],
+                            implode("\n", $cfg['messages']['voteLevelUp'])
+                        );
+                        $ts->sendMessage(1, $onlineClient['clid'], $message);
                     }
                     
-                    break; // Nur ein Level pro Check
+                    $ezApp->createLog($mongoDB, __CLASS__, $clientUID,
+                                   $voter['clientNickname'], 'reached vote level ' . $highestEligibleLevel . ' with ' . $totalVotes . ' votes');
+                } catch(Exception $e) {
+                    $this->createLog($cfg, "Error adding group: " . $e->getMessage());
                 }
             }
         }
@@ -324,24 +337,73 @@ class clientVotingAPI {
     }
     
     private function findClientUIDByUsername($ts, $mongoDB, $username) {
-        // Suche zuerst in der Datenbank
-        $clientData = $mongoDB->serverClients->findOne(['clientNickname' => $username]);
+        // Prüfe zuerst ob User online ist (da Voter meist online sind)
+        $onlineClient = $this->findOnlineClientByUsername($ts, $username);
+        
+        if($onlineClient && isset($onlineClient['client_unique_identifier'])) {
+            $currentUID = $onlineClient['client_unique_identifier'];
+            $currentDbId = isset($onlineClient['client_database_id']) ? intval($onlineClient['client_database_id']) : 0;
+            
+            // Prüfe ob es bereits Votes für diesen Username mit anderer UID gibt
+            $existingVotesEntry = $mongoDB->clientVotes->findOne(['clientNickname' => $username]);
+            
+            if($existingVotesEntry &&
+               ($existingVotesEntry['clientUniqueIdentifier'] !== $currentUID ||
+                $existingVotesEntry['clientDatabaseId'] !== $currentDbId)) {
+                // User hat Votes mit alter UID ODER alter Database ID -> übertrage
+                $oldUID = $existingVotesEntry['clientUniqueIdentifier'];
+                
+                // Verwende Online Database ID (prioritär), Fallback serverClients (neueste)
+                $newDbId = $currentDbId; // Online Session
+                if (!$newDbId) {
+                    $currentClientData = $mongoDB->serverClients->findOne(
+                        ['clientUniqueIdentifier' => $currentUID],
+                        ['sort' => ['_id' => -1]]
+                    );
+                    $newDbId = $currentClientData ? $currentClientData['clientDatabaseId'] : 0;
+                }
+                
+                // Aktualisiere clientVotes mit neuer UID + korrekter Database ID
+                $mongoDB->clientVotes->updateOne(
+                    ['_id' => $existingVotesEntry['_id']],
+                    ['$set' => [
+                        'clientUniqueIdentifier' => $currentUID,
+                        'clientDatabaseId' => $newDbId
+                    ]]
+                );
+                
+                $this->createLog(['debug' => true], "Transferred votes for $username from UID $oldUID to $currentUID (DB ID: $currentDbId)");
+                
+                // Vote-Gruppe neu vergeben auf neue Database ID
+                $voteLevel = isset($existingVotesEntry['voteLevel']) ? intval($existingVotesEntry['voteLevel']) : 0;
+                if($voteLevel > 0 && isset($cfg['voteLevels'][$voteLevel])) {
+                    try {
+                        $ts->serverGroupAddClient($cfg['voteLevels'][$voteLevel]['groupId'], $currentDbId);
+                        $this->createLog(['debug' => true], "Re-assigned vote group {$cfg['voteLevels'][$voteLevel]['groupId']} to new UID $currentUID");
+                    } catch(Exception $e) {
+                        $this->createLog(['debug' => true], "Error re-assigning vote group: " . $e->getMessage());
+                    }
+                }
+            }
+            
+            return $currentUID;
+        }
+        
+        // Fallback: User nicht online - suche in DB (von hinten nach vorne = neueste zuerst)
+        $clientData = $mongoDB->serverClients->findOne(
+            ['clientNickname' => $username],
+            ['sort' => ['_id' => -1]]
+        );
         if($clientData && isset($clientData['clientUniqueIdentifier'])) {
             return $clientData['clientUniqueIdentifier'];
         }
         
-        // Fallback: Case-insensitive Suche
+        // Case-insensitive Fallback (auch neueste zuerst)
         $clientData = $mongoDB->serverClients->findOne([
             'clientNickname' => new MongoDB\BSON\Regex('^' . preg_quote($username, '/') . '$', 'i')
-        ]);
+        ], ['sort' => ['_id' => -1]]);
         if($clientData && isset($clientData['clientUniqueIdentifier'])) {
             return $clientData['clientUniqueIdentifier'];
-        }
-        
-        // Wenn nicht in DB, suche online
-        $onlineClient = $this->findOnlineClientByUsername($ts, $username);
-        if($onlineClient && isset($onlineClient['client_unique_identifier'])) {
-            return $onlineClient['client_unique_identifier'];
         }
         
         return null;

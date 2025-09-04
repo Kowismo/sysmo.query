@@ -127,8 +127,8 @@ class votingStats {
         
         $desc = $cfg['descriptions']['upHeader'];
         
-        // Kombiniere Votes aus beiden Quellen - OHNE Filterung nach Gruppen
-        $monthlyVotesArray = [];
+        // UID-basierte monatliche Votes - löst Inkonsistenzen mit All-Time Listen
+        $monthlyVotesByUID = [];
         
         // 1. Hole TeamSpeak-Servers.org Votes für diesen Monat
         $tsServersVotes = $mongoDB->teamspeakServersVotes->find([
@@ -139,16 +139,17 @@ class votingStats {
             $username = $vote['nickname'];
             $votes = intval($vote['votes']);
             
-            // ENTFERNT: Keine Filterung mehr nach Gruppen
-            // $clientUID = $this->findClientUIDByUsername($mongoDB, $username);
-            // if($clientUID && $this->isClientInIgnoredGroup($mongoDB, $clientUID)) {
-            //     continue;
-            // }
-            
-            if(!isset($monthlyVotesArray[$username])) {
-                $monthlyVotesArray[$username] = 0;
+            // Finde UID für diesen Username
+            $clientUID = $this->findClientUIDByUsername($mongoDB, $username);
+            if($clientUID) {
+                if(!isset($monthlyVotesByUID[$clientUID])) {
+                    $monthlyVotesByUID[$clientUID] = [
+                        'votes' => 0,
+                        'nickname' => $username
+                    ];
+                }
+                $monthlyVotesByUID[$clientUID]['votes'] += $votes;
             }
-            $monthlyVotesArray[$username] += $votes;
         }
         
         // 2. Hole TopG Votes vom aktuellen Monat
@@ -168,42 +169,43 @@ class votingStats {
             $username = $vote['_id'];
             $votes = $vote['votes'];
             
-            // ENTFERNT: Keine Filterung mehr nach Gruppen
-            // $clientUID = $this->findClientUIDByUsername($mongoDB, $username);
-            // if($clientUID && $this->isClientInIgnoredGroup($mongoDB, $clientUID)) {
-            //     continue;
-            // }
-            
-            if(!isset($monthlyVotesArray[$username])) {
-                $monthlyVotesArray[$username] = 0;
+            // Finde UID für diesen Username
+            $clientUID = $this->findClientUIDByUsername($mongoDB, $username);
+            if($clientUID) {
+                if(!isset($monthlyVotesByUID[$clientUID])) {
+                    $monthlyVotesByUID[$clientUID] = [
+                        'votes' => 0,
+                        'nickname' => $username
+                    ];
+                }
+                $monthlyVotesByUID[$clientUID]['votes'] += $votes;
             }
-            $monthlyVotesArray[$username] += $votes;
         }
         
         // Sortiere nach Votes
-        arsort($monthlyVotesArray);
+        uasort($monthlyVotesByUID, function($a, $b) {
+            return $b['votes'] - $a['votes'];
+        });
         
         // Limitiere auf recordsLimit
-        $monthlyVotesArray = array_slice($monthlyVotesArray, 0, $cfg['recordsLimit'], true);
+        $monthlyVotesByUID = array_slice($monthlyVotesByUID, 0, $cfg['recordsLimit'], true);
         
-        file_put_contents($logFile, date('Y-m-d H:i:s') . " - Found " . count($monthlyVotesArray) . " monthly voters (combined sources)\n", FILE_APPEND);
+        file_put_contents($logFile, date('Y-m-d H:i:s') . " - Found " . count($monthlyVotesByUID) . " monthly voters (UID-based aggregation)\n", FILE_APPEND);
         
         // KORRIGIERTE AWARD-LOGIK: Finde ersten ELIGIBLE User für Monthly Award
-        if($cfg['awardsEnabled'] && isset($cfg['groupId']) && !empty($monthlyVotesArray)) {
+        if($cfg['awardsEnabled'] && isset($cfg['groupId']) && !empty($monthlyVotesByUID)) {
             $position = 1;
             $awardGiven = false;
             
-            foreach($monthlyVotesArray as $username => $voteCount) {
-                $clientUID = $this->findClientUIDByUsername($mongoDB, $username);
-                
-                if($clientUID && !$this->isClientInIgnoredGroup($mongoDB, $clientUID, $this->ignoredGroupsForAwards)) {
+            foreach($monthlyVotesByUID as $clientUID => $data) {
+                if(!$this->isClientInIgnoredGroup($mongoDB, $clientUID, $this->ignoredGroupsForAwards)) {
                     // Dieser User bekommt den Monthly Award!
-                    $this->updateMonthlyAward($ts, $cfg['groupId'], $username, $mongoDB, $logFile);
-                    file_put_contents($logFile, date('Y-m-d H:i:s') . " - Awarded monthly top voter group to " . $username . " (position " . $position . " in list)\n", FILE_APPEND);
+                    $this->updateMonthlyAward($ts, $cfg['groupId'], $data['nickname'], $mongoDB, $logFile);
+                    file_put_contents($logFile, date('Y-m-d H:i:s') . " - Awarded monthly top voter group to " . $data['nickname'] . " (UID: $clientUID, position " . $position . " in list)\n", FILE_APPEND);
                     $awardGiven = true;
                     break;
                 } else {
-                    file_put_contents($logFile, date('Y-m-d H:i:s') . " - Skipped monthly award for " . $username . " (position " . $position . ") - in ignored group for awards\n", FILE_APPEND);
+                    file_put_contents($logFile, date('Y-m-d H:i:s') . " - Skipped monthly award for " . $data['nickname'] . " (UID: $clientUID, position " . $position . ") - in ignored group for awards\n", FILE_APPEND);
                 }
                 $position++;
             }
@@ -213,27 +215,17 @@ class votingStats {
             }
         }
         
-        if(empty($monthlyVotesArray)) {
+        if(empty($monthlyVotesByUID)) {
             $desc .= $cfg['descriptions']['noVoters'];
         } else {
             $position = 1;
             
-            foreach($monthlyVotesArray as $username => $voteCount) {
-                // Versuche Client-Daten zu finden
-                $clientData = $mongoDB->clientVotes->findOne(['clientNickname' => $username]);
-                if(!$clientData) {
-                    $clientData = $mongoDB->serverClients->findOne(['clientNickname' => $username]);
-                }
-                
-                $clientUID = $clientData ? $clientData['clientUniqueIdentifier'] : '';
-                
-                $clientLink = !empty($clientUID) ? 
-                    '[url=client://0/' . $clientUID . ']' . $username . '[/url]' : 
-                    $username;
+            foreach($monthlyVotesByUID as $clientUID => $data) {
+                $clientLink = '[url=client://0/' . $clientUID . ']' . $data['nickname'] . '[/url]';
                 
                 $desc .= str_replace(
-                    ['%i%', '%clientId%', '%value%'], 
-                    [$position, $clientLink, $voteCount], 
+                    ['%i%', '%clientId%', '%value%'],
+                    [$position, $clientLink, $data['votes']],
                     $cfg['descriptions']['userLine']
                 );
                 
